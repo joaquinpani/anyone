@@ -1,3 +1,395 @@
 [gd_scene format=3 uid="uid://be7l13fjplc8f"]
 
+[ext_resource type="Script" uid="uid://brx8ylem2k7mw" path="res://credits.gd" id="1_c1t8d"]
+[ext_resource type="FontFile" uid="uid://x0y084x1qgou" path="res://Minecraft.ttf" id="1_nm7lk"]
+
+[sub_resource type="Animation" id="Animation_c1t8d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Label2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Label3:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Label4:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/Label5:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Label7:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Label8:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Label6:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Label6/Label6:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Label9:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_g4wvt"]
+resource_name = "new_animation"
+length = 28.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Label2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(3),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Label3:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2.3680806, 2.9333334, 5.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Label4:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(4.5578074, 5.266667, 7.5676804, 7.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer/Label5:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(7.5676804, 7.9666667, 12.033334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer/Label7:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(13.766666, 14.233334, 15.565343),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimationPlayer/Label8:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(15.608341, 16.5, 19.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("AnimationPlayer/Label6:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(19.9, 20.333334, 24.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("AnimationPlayer/Label6/Label6:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(21.6, 22.3, 24.133333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("AnimationPlayer/Label9:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(24.3, 25.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pjc1l"]
+_data = {
+&"RESET": SubResource("Animation_c1t8d"),
+&"new_animation": SubResource("Animation_g4wvt")
+}
+
 [node name="Credits" type="Node2D" unique_id=1016864613]
+script = ExtResource("1_c1t8d")
+
+[node name="Label" type="Label" parent="." unique_id=1523257838]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label" unique_id=2020307324]
+libraries/ = SubResource("AnimationLibrary_pjc1l")
+
+[node name="Label2" type="Label" parent="Label/AnimationPlayer" unique_id=704343759]
+offset_left = 208.0
+offset_top = 253.0
+offset_right = 919.0
+offset_bottom = 358.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "you did it"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Label/AnimationPlayer" unique_id=624596223]
+visible = false
+offset_left = 208.0
+offset_top = 253.0
+offset_right = 919.0
+offset_bottom = 358.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "you defeated me"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Label/AnimationPlayer" unique_id=1206553259]
+visible = false
+offset_left = 208.0
+offset_top = 253.0
+offset_right = 919.0
+offset_bottom = 358.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "well, congratulations"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Label/AnimationPlayer" unique_id=1170397831]
+visible = false
+offset_left = 208.0
+offset_top = 253.0
+offset_right = 919.0
+offset_bottom = 358.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "¿now on how are 
+you going to trust?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="Label/AnimationPlayer" unique_id=992738744]
+visible = false
+offset_left = 208.0
+offset_top = 253.0
+offset_right = 919.0
+offset_bottom = 363.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "MUSIC:
+
+pixabay music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label9" type="Label" parent="Label/AnimationPlayer" unique_id=1761581234]
+visible = false
+offset_left = -164.0
+offset_top = 203.0
+offset_right = 547.0
+offset_bottom = 313.0
+scale = Vector2(1.9953455, 2.187003)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "¡THANK FOR PLAY!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="Label/AnimationPlayer" unique_id=1803537749]
+visible = false
+offset_left = 208.0
+offset_top = 176.0
+offset_right = 919.0
+offset_bottom = 516.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "SPRITES:
+
+Goblin Mode Games
+Heosphorus
+CRAFTPIX
+Quintino Pixels
+OcO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="Label/AnimationPlayer" unique_id=1122116174]
+visible = false
+offset_left = 208.0
+offset_top = 253.0
+offset_right = 919.0
+offset_bottom = 358.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 45
+text = "A game maded by: joaquinmaker"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="Label/AnimationPlayer/Label6" unique_id=1669388529]
+visible = false
+layout_mode = 0
+offset_left = -8.0
+offset_top = 38.0
+offset_right = 718.0
+offset_bottom = 143.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("1_nm7lk")
+theme_override_font_sizes/font_size = 20
+text = "on one day omg"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=456355584]
+offset_left = -144.0
+offset_top = -50.0
+offset_right = 1221.0
+offset_bottom = 687.0
+color = Color(0, 0, 0, 1)

@@ -18,6 +18,8 @@
 [ext_resource type="Script" uid="uid://bg0bs6xqdtqld" path="res://cuerpo.gd" id="13_orxlw"]
 [ext_resource type="Script" uid="uid://bednj3tbe8qqe" path="res://battle inicio.gd" id="15_qigdi"]
 [ext_resource type="AudioStream" uid="uid://encjdbyuhhaf" path="res://music/phatphrogstudio-rpg-female-attack-grunt-no-ai-481720.mp3" id="16_wy1w3"]
+[ext_resource type="Texture2D" uid="uid://d3qjvrqvyiyi" path="res://hearts.png" id="19_si8ik"]
+[ext_resource type="FontFile" uid="uid://x0y084x1qgou" path="res://Minecraft.ttf" id="20_uge88"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ikosb"]
 texture = ExtResource("1_hwff7")
@@ -1098,6 +1100,67 @@ shape = SubResource("RectangleShape2D_uenwl")
 position = Vector2(1930, 248)
 zoom = Vector2(0.65, 0.65)
 position_smoothing_enabled = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=1459531960]
+position = Vector2(1934, 634)
+scale = Vector2(8, 8)
+texture = ExtResource("19_si8ik")
+region_enabled = true
+region_rect = Rect2(0, 33.6821, 16, 14.442657)
+
+[node name="Sprite2D4" type="Sprite2D" parent="Sprite2D3" unique_id=633351565]
+position = Vector2(15.25, 0)
+texture = ExtResource("19_si8ik")
+region_enabled = true
+region_rect = Rect2(0, 33.6821, 16, 14.442657)
+
+[node name="Sprite2D5" type="Sprite2D" parent="Sprite2D3" unique_id=657349306]
+position = Vector2(29.875, 0)
+texture = ExtResource("19_si8ik")
+region_enabled = true
+region_rect = Rect2(0, 33.6821, 16, 14.442657)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D3" unique_id=1478164708]
+position = Vector2(-15.25, 0)
+texture = ExtResource("19_si8ik")
+region_enabled = true
+region_rect = Rect2(0, 33.6821, 16, 14.442657)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D3" unique_id=647919149]
+position = Vector2(-30.5, 0)
+texture = ExtResource("19_si8ik")
+region_enabled = true
+region_rect = Rect2(0, 33.6821, 16, 14.442657)
+
+[node name="Label2" type="Label" parent="." unique_id=1501924248]
+offset_left = 153.0
+offset_top = 192.0
+offset_right = 895.0
+offset_bottom = 336.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("20_uge88")
+theme_override_font_sizes/font_size = 45
+text = "now press the key \"q\" with this
+you can be free of your power,
+you are gonna need that trust me!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=662349776]
+offset_left = 1448.0
+offset_top = -222.0
+offset_right = 2436.0
+offset_bottom = -78.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("20_uge88")
+theme_override_font_sizes/font_size = 45
+text = "HAHAH IDIOT NOW I AM GOING TO KILL YOU"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="body_entered" from="malote/Area2D" to="malote/Area2D" method="_on_body_entered"]
 [connection signal="timeout" from="malote/Timer" to="malote" method="_on_timer_timeout"]

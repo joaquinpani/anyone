@@ -548,10 +548,10 @@ one_shot = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1392935158]
 modulate = Color(1, 1, 1, 0)
-offset_left = -1094.0
-offset_top = -661.0
-offset_right = 1202.0
-offset_bottom = 659.0
+offset_left = -2071.0
+offset_top = -1179.0
+offset_right = 2578.0
+offset_bottom = 1680.0
 color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect" unique_id=1325220622]

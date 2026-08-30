@@ -14,6 +14,9 @@ func atacado():
 
 func _on_timer_timeout() -> void:
 	if muerto == false:
+		$"../Label2".text = "hey why you hurt me? 
+		¡we are friends!"
+		$PhatphrogstudioRpgFemaleAttackGruntNoAi481720.play()
 		$"../AnimatedSprite2D".play("default")
 		if vida == 3:
 			$"../Sprite2D".show()
@@ -24,11 +27,13 @@ func _on_timer_timeout() -> void:
 			$"../Sprite2D2".hide()
 			vida = vida -1
 		elif vida == 1:
+			$"../Label2".hide()
+			$RibhavagrawalBulletshotImpactSoundEffect230462.play()
 			muerto = true
 			$"../AnimatedSprite2D".play("morir")
 			$"../Sprite2D".hide()
 			$"../../portal/AnimatedSprite2D".play("activo")
 			$"../../portal".monitoring = true
-			
+			$"../../CanvasLayer2/Label2".text = "enter to the portal"
 		
 	pass # Replace with function body.

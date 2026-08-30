@@ -5,6 +5,7 @@ const SPEED = 450.0
 const JUMP_VELOCITY = -700.0
 var atacando = false
 var a = false
+var power = false
 func _physics_process(delta: float) -> void:
 		# Add the gravity.
 		
@@ -55,15 +56,18 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("jump")
 		
 		if Input.is_action_just_pressed("ataque") and is_on_floor():
-			atacando = true
-			$AnimationPlayer.play("ataque")
-			$BiwwShortElectricZap561890.play()
-			if $AnimatedSprite2D.flip_h == false:
-				$Area2D.scale.x = 1
-				$AnimatedSprite2D.flip_h = false
-			elif $AnimatedSprite2D.flip_h == true:
-				$AnimatedSprite2D.flip_h = true
-				$Area2D.scale.x = -1
+			if power == false:
+				atacando = true
+				$AnimationPlayer.play("ataque")
+				$BiwwShortElectricZap561890.play()
+				if $AnimatedSprite2D.flip_h == false:
+					$Area2D.scale.x = 1
+					$AnimatedSprite2D.flip_h = false
+				elif $AnimatedSprite2D.flip_h == true:
+					$AnimatedSprite2D.flip_h = true
+					$Area2D.scale.x = -1
+		if Input.is_action_just_pressed("q"):
+			power = true
 		move_and_slide()
 
 func finalataque():

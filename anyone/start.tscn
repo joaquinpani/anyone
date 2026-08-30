@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://d1fy233edm71g"]
+
+[ext_resource type="Script" uid="uid://cfq5j61bx8a38" path="res://start.gd" id="1_qn1rc"]
+[ext_resource type="Texture2D" uid="uid://bdixqg5sgnnkg" path="res://Jm.png" id="2_1n0d2"]
+[ext_resource type="AudioStream" uid="uid://d2fhp20xxr57x" path="res://4/diamond_tunes-sonic-symposium-logo-203256.mp3" id="3_1n0d2"]
+
+[sub_resource type="Animation" id="Animation_y5hus"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jm:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_oiuna"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jm:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5333333, 5),
+"transitions": PackedFloat32Array(1, 0.7578583, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.96862745), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4a3qj"]
+_data = {
+&"RESET": SubResource("Animation_y5hus"),
+&"new_animation": SubResource("Animation_oiuna")
+}
+
+[node name="Start" type="Node2D" unique_id=367805923]
+script = ExtResource("1_qn1rc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1909868434]
+offset_left = -101.0
+offset_top = -52.0
+offset_right = 1231.0
+offset_bottom = 665.0
+color = Color(0, 0, 0, 1)
+
+[node name="Jm" type="Sprite2D" parent="." unique_id=1848589060]
+position = Vector2(566, 336)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_1n0d2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=718419669]
+libraries/ = SubResource("AnimationLibrary_4a3qj")
+
+[node name="Timer" type="Timer" parent="." unique_id=938641072]
+wait_time = 7.0
+one_shot = true
+autostart = true
+
+[node name="DiamondTunesSonicSymposiumLogo203256" type="AudioStreamPlayer" parent="." unique_id=357351220]
+stream = ExtResource("3_1n0d2")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

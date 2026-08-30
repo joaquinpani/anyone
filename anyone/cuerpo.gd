@@ -19,4 +19,13 @@ func atacado():
 	if vida == 0:
 		get_tree().change_scene_to_file("res://credits.tscn")
 		pass
+	elif vida == 4:
+		$"../../Sprite2D3/Sprite2D5".hide()
+	elif vida == 3:
+		$"../../Sprite2D3/Sprite2D".hide()
+	elif vida == 2:
+		$"../../Sprite2D3/Sprite2D4".hide()
+	elif vida == 1:
+		$"../../Sprite2D3/Sprite2D2".hide()
+	
 	
