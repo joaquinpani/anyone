@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://7u6k1306cred"]
+
+[ext_resource type="Script" uid="uid://baf7vs2ayuv4i" path="res://bala_izquierda.gd" id="1_jpeih"]
+[ext_resource type="Texture2D" uid="uid://4bltr7gxuqyl" path="res://Striker/Striker/spr_StrikerSlash_stripOnlyEffect.png" id="2_jb4tc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sn88x"]
+size = Vector2(183, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7txl2"]
+atlas = ExtResource("2_jb4tc")
+region = Rect2(1664, 0, 128, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sn88x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7txl2")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="bala izquierda" type="Area2D" unique_id=1396475619]
+script = ExtResource("1_jpeih")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=638726720]
+position = Vector2(7.5, 0)
+shape = SubResource("RectangleShape2D_sn88x")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=559489]
+position = Vector2(107.999985, 13)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_sn88x")
+flip_h = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
